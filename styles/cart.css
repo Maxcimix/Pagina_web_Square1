@@ -1,0 +1,38 @@
+@import "./reset.css";
+@import "./fonts.css";
+@import "./components/index.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  /* Variables */
+  font-size: 8px;
+  /*Colors*/
+  --color-primary: #ed1c24;
+  --color-black: #191919;
+  --color-white: #ffffff;
+  --color-darker-gray: #cccccccc;
+  --color-ligher-gray: #fafafa;
+}
+
+span {
+  font-family: "Poppins";
+}
+
+p,
+a,
+span {
+  font-size: 2rem;
+}
+
+p,
+a {
+  font-family: "Poppins";
+}
+
+.img-logo {
+  display: block;
+}
+
+.icon {
+  stroke: currentColor;
+}

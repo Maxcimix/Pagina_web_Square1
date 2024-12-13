@@ -1,0 +1,334 @@
+@import "./reset.css";
+@import "./fonts.css";
+@import "./components/index.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  /* Variables */
+  font-size: 8px;
+  /*Colors*/
+  --color-primary: #ed1c24;
+  --color-black: #191919;
+  --color-white: #ffffff;
+  --color-darker-gray: #cccccccc;
+  --color-ligher-gray: #fafafa;
+}
+
+p,
+a,
+span {
+  font-size: 2rem;
+}
+
+p,
+a {
+  font-family: "Poppins";
+}
+
+.img-logo {
+  display: block;
+}
+
+.icon {
+  stroke: currentColor;
+}
+
+
+/* Main Content Styles */
+.main-container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+  gap: 40px;
+}
+
+/* Aside-Sidebar  */
+.sidebar {
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.filters-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  font-family: "Volkhov";
+}
+
+.filter-section {
+  margin-bottom: 32px;
+}
+
+.filter-section-header {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.icon-cono {
+  font-size: 8%;
+  width: 100%;
+}
+
+.filter-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  font-family: "Volkhov";
+}
+
+/* Size Filter */
+.size-options {
+  display: grid;
+  grid-template-columns: repeat(3, 36px);
+  gap: 8px;
+}
+
+.size-option {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: "Jost Variable";
+}
+
+/* Color Filter */
+.color-options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.color-option {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.price-range {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-family: "Poppins";
+}
+
+/* Main Content Area */
+.content {
+  flex-grow: 1;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.sorting {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.view-options {
+  display: flex;
+  gap: 8px;
+}
+
+.view-option {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Brands and Collections Styles */
+.brand-options,
+.collection-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.brand-option,
+.collection-option {
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  font-family: "Poppins";
+}
+
+.brand-option:hover,
+.collection-option:hover {
+  color: #333;
+}
+
+/* Tags Styles */
+.tag-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 4px 8px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #666;
+  cursor: pointer;
+  font-family: "Jost Variable";
+}
+
+/* Main Content Area */
+.content {
+  flex-grow: 1;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.sorting {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.view-options {
+  display: flex;
+  gap: 8px;
+}
+
+.view-option {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.product-card {
+  margin-bottom: 32px;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.product-name {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.current-price {
+  font-weight: 600;
+}
+
+.original-price {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.product-colors {
+  display: flex;
+  gap: 8px;
+}
+
+.product-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 0.5px black;
+  cursor: pointer;
+}
+
+.product-color-second {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid rgb(195, 190, 190);
+  cursor: pointer;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+}
+
+.page-number {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Jost Variable";
+  font-size: 16px;
+}
+
+.page-number.active {
+  background-color: #F3F3F3;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-family: "Jost Variable";
+}
+
+.arrow {
+  width: 30px; 
+  height: 30px;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow:hover {
+  color: gray; 
+}

@@ -1,0 +1,114 @@
+.header > .logo {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-bottom: solid 1px var(--color-darker-gray);
+}
+
+.header-logo-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 150ms;
+}
+
+.header-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0.5rem;
+  display: block;
+  box-sizing: border-box;
+  color: var(--color-black);
+  transition: all 150ms;
+}
+
+.header-icon:hover {
+  color: var(--color-primary);
+}
+
+.navbar {
+  background-color: var(--color-ligher-gray);
+  width: 100%;
+  display: none;
+  justify-content: center;
+  border: solid 1px var(--color-darker-gray);
+  border-bottom: solid 1px var(--color-darker-gray);
+  transition: all 150ms;
+}
+
+.navbar > .nav-item {
+  text-transform: uppercase;
+  color: var(--color-black);
+  transition: all 150ms;
+  font-family: "Poppins";
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+.navbar > .nav-item:hover {
+  color: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .header > .logo {
+    border-bottom: none;
+  }
+
+  .header-icons {
+    gap: 1rem;
+  }
+  .header-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .navbar {
+    display: flex;
+    gap: 5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    gap: 10re;
+    padding: 1rem;
+  }
+  .navbar > .nav-itemr {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  /* .header{
+        background-color: green;
+    }
+  .header > .logo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-icons {
+    display: none;
+  }
+  .navbar{
+    gap: 2rem;
+  } */
+}

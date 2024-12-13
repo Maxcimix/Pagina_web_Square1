@@ -1,0 +1,16 @@
+- [*] Definir varibles de los colores en css
+- [] Definir fuente
+- [] Definir componentes
+    -[] Botones
+        -[] Boton principal - primary
+        -[] Boton ghost - primary
+        -[] Boton outlined - primary
+    -[] Tarjeta de producto
+        - Imagenes
+        - Nombre
+        - Marca
+        - Precio de oferta
+        - Precio
+        - Colores
+        - Call to action
+
