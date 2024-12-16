@@ -36,3 +36,220 @@ a {
 .icon {
   stroke: currentColor;
 }
+
+/* ::::::::::::Main:::::::::::::::::: */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.breadcrumb {
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Jost Variable";
+  color: #000000;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 42px;
+  font-weight: 400;
+  font-family: "Volkhov";
+  line-height: 32px;
+  color: #000000;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #00000063;
+  font-weight: 400;
+  font-family: "Volkhov";
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.text-total {
+  position: relative;
+  top: -20px;
+}
+
+.cart-table td {
+  padding: 15px;
+  vertical-align: top;
+}
+
+.product-info {
+  display: flex;
+  gap: 20px;
+}
+
+.product-image {
+  top: 486px;
+  object-fit: cover;
+  left: 320px;
+}
+
+.product-details h5 {
+  font-family: "Volkhov";
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.product-color {
+  color: #666;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.remove-link {
+  color: #666;
+  text-decoration: underline;
+  font-size: 22px;
+}
+
+.price-text {
+  font-family: "Volkhov";
+  font-size: 22px;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.quantity-btn {
+  padding: 5px 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  line-height: 37.54px;
+  font-size: 25.02px;
+  font-weight: 500;
+}
+
+.cart-table tbody {
+  border-bottom: 1px solid #00000063;
+}
+
+.quantity-input {
+  width: 40px;
+  text-align: center;
+  border: none;
+  padding: 5px;
+  font-size: 25px;
+  font-family: "poppins";
+  color: #8a8a8a;
+}
+
+.gift-wrap {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.gift-wrap input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.gift-wrap label {
+  font-size: 18px;
+  font-family: "poppins";
+  font-weight: 400;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.gift-wrap label,
+input {
+  border-bottom: 1px solid #00000063;
+}
+
+
+.checkout-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  max-width: 400px;
+  margin-left: auto;
+}
+
+.table_subtotal {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.subtotal {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Volkhov";
+}
+
+.checkout-btn {
+  background: #ed1c24;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+  font-family: "poppins";
+  font-size: 16px;
+}
+
+.view-cart-btn {
+  color: #000000;
+  text-decoration: underline;
+  text-align: center;
+  display: block;
+  font-family: "Volkhov";
+  font-size: 22px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .product-info {
+    flex-direction: column;
+  }
+
+  .cart-table th:not(:first-child) {
+    display: none;
+  }
+
+  .cart-table td:not(:first-child) {
+    display: block;
+    text-align: right;
+    padding: 10px 15px;
+  }
+
+  .cart-table td:not(:first-child)::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: 500;
+  }
+}
